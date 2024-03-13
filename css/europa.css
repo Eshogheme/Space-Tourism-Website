@@ -9,7 +9,7 @@ html,body{
     padding: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+    background-image: url(/starter-code/assets/destination/background-destination-mobile.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -39,7 +39,7 @@ html,body{
 
 .hamburger-menu{
     position: relative;
-    left: 100%;
+    left: 110%;
     top: 25px;
     display: block;
 }
@@ -68,66 +68,93 @@ html,body{
     color: white;
     text-decoration: none;
     font-size: 16px;
-   
  }
-
- #main{
+.main{
     display: flex;
     flex-direction: column;
-    justify-content:center ;
-    align-items: center;
-    position: relative;
-    top: 70px;
-    
- }
-
-.para1{
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: lighter;
-    letter-spacing: 2.7px;
-    /* position: relative;
-    left: -15px; */
-}
-
-#header1{
-    color: white;
-    text-align: center;
-    font-size: 80px;
-    font-family: 'Bellefair';
-    font-weight: lighter;
-    /* position: relative;
-    left: -15px; */
-}
-
-.para2{
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    width: 80%;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: lighter;
-    /* position: relative;
-    left: 20px; */
-}
-
-.explore-wrapper{
-    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
     position: relative;
-    left: 15%;
-    top: 20px;
+    top: 50px;
 }
-#explore-text{
-    font-size: 25px;
-    position: relative;
-    right: 160px;
+
+.first-para{
+    color: white;
+    font-size: 18px;
     font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.7px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    margin-top:50px;
 }
+#first-text{
+    opacity: 0.25;
+}
+
+.europa-image{
+    width: 55%;
+}
+
+.links-wrapper{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#new-ul{
+    display: flex;
+}
+.links-list{
+    padding-right: 30px;
+    list-style-type: none;
+    
+}
+.links{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'Barlow Condensed', sans-serif;
+    
+}
+ #europa-link{
+    padding-bottom:10px ;
+    border-bottom: 3px solid white;
+  }
+#heading{
+    color: white;
+    font-size: 70px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: lighter;
+}
+
+
+.second-para{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: lighter;
+}
+
+.third-para{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px
+}
+
+.counter {
+    font-size: 40px;
+    font-weight: 50;
+    color: white;
+    font-family: 'Bellefair';
+
+  }
+  
+
+  
+
 
 }

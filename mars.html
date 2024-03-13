@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Space Tourism Website</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/mars.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   </head>
+
   <body>
     <header>
       <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
@@ -43,7 +44,7 @@
 
         <ul id="ul">
           <li class="li">
-            <a class="anchor" href="">00 HOME</a>
+            <a class="anchor" href="index.html">00 HOME</a>
           </li>
           <li class="li">
             <a class="anchor" href="index2.html">01 DESTINATION</a>
@@ -57,27 +58,47 @@
         </ul>
       </nav>
     </header>
-    <main id="main">
-      <p class="para1">SO, YOU WANT TO TRAVEL TO</p>
-      <h1 id="header1">SPACE</h1>
-      <p class="para2">
-        lets face it; if you want to go to space, you might as well genuinely go
-        to outer space and not hover kind of on the edge of it. Well sit back,
-        and relax because we'll give you a truly out of this world experience!
+    <main class="main">
+      <p class="first-para">
+        <span id="first-text">01</span> PICK YOUR DESTINATION
       </p>
-      <div class="explore-wrapper">
-      <svg class="explore-svg"
-        xmlns="http://www.w3.org/2000/svg"
-        width="200"
-        height="200"
-        viewBox="0 0 150 150"
-        fill="none"
-      >
-        <circle cx="75" cy="75" r="75" fill="white" />
-      </svg>
-      <P id="explore-text">EXPLORE</P>
-    </div>
+      <img class="mars-image" src="/starter-code/assets/destination/image-mars.png" alt="">
+      <div class="links-wrapper">
+        <ul id="new-ul">
+          <li class="links-list">
+            <a class="links" href="index2.html">MOON</a>
+          </li>
+          <li class="links-list">
+            <a id="mars-link" class="links" href="">MARS</a>
+          </li>
+          <li class="links-list">
+            <a class="links" href="europa.html">EUROPA</a>
+          </li>
+          <li class="links-list">
+            <a class="links" href="titan.html">TITAN</a>
+          </li>
+        </ul>
+      </div>
+
+      <h1 id="heading">MARS</h1>
+
+      <p class="second-para">
+        Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
+      </p>
+
+      <hr id="horizontal-line" />
+      
+        <p class="third-para">
+          AVG. DISTANCE
+        </p>
+        <div class="counter">225 MIL. KM</div>
+       
+
+      <p class="third-para">
+        EST. TRAVEL TIME
+      </p>
+      <div class="counter">9 MONTHS</div>
     </main>
-    <script src="js/script.js"></script>
+    <script src="/js/script2.js"></script>
   </body>
 </html>
