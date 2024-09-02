@@ -9,7 +9,14 @@ const firstBubble = document.querySelector("#first-bubble");
 const secondBubble = document.querySelector("#second-bubble");
 const thirdBubble = document.querySelector("#third-bubble");
 const fourthBubble = document.querySelector("#fourth-bubble");
+const commander = document.querySelector('.commander');
+const specialist = document.querySelector('.specialist');
+const pilot = document.querySelector('.pilot');
+const engineer = document.querySelector('.engineer');
 let currentPage = 0;
+
+console.log(commander)
+console.log(specialist)
 
 hamburger.addEventListener("click", function () {
   ul.style.visibility = "visible";
@@ -33,49 +40,20 @@ closedHamburger.addEventListener("click", function () {
   hamburger.style.left = "60%";
 });
 
-function goToPage(pageNumber) {
-  currentPage = pageNumber;
 
-  //to swipe on the horizontal plane. If swiping left, the current page will be negative and when swiping right it'd be positive.
-  slider.style.transform = `translateX(-${currentPage * 100}%)`;
+if (commander) {
+   firstBubble.classList.add("active");
 }
-let startX;
-let stopX;
-if (currentPage === 0) {
-  firstBubble.classList.add("active");
-  secondBubble.classList.remove("active");
-  thirdBubble.classList.remove("active");
-  fourthBubble.classList.remove("active");
-} else if (currentPage === 1) {
+if(specialist) {
   secondBubble.classList.add("active");
-  firstBubble.classList.remove("active");
-  thirdBubble.classList.remove("active");
-  fourthBubble.classList.remove("active");
-} else if (currentPage === 2) {
+} 
+
+if(pilot){
   thirdBubble.classList.add("active");
-  firstBubble.classList.remove("active");
-  secondBubble.classList.remove("active");
-  fourthBubble.classList.remove("active");
-} else if (currentPage === 3) {
-  fourthBubble.classList.add("active");
-  firstBubble.classList.remove("active");
-  secondBubble.classList.remove("active");
-  thirdBubble.classList.remove("active");
-}else{
-  console.log("page wasn't noved at all")
 }
-slider.addEventListener("touchstart", function (e) {
-  startX = e.touches[0].clientX;
-});
 
-slider.addEventListener("touchend", function (e) {
-  stopX = e.changedTouches[0].clientX;
+if(engineer){
+  fourthBubble.classList.add("active");
+}
 
-  if (startX > stopX + 50) {
-    // Swipe left
-    if (currentPage < pages.length - 1) goToPage(currentPage + 1);
-  } else if (startX < stopX - 50) {
-    // Swipe right
-    if (currentPage > 0) goToPage(currentPage - 1);
-  }
-});
+
