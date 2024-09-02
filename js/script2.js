@@ -1,13 +1,12 @@
+const hamburger = document.querySelector(".hamburger-menu");
+const closedHamburger = document.querySelector(".hamburger-menu-closed");
+const ul = document.querySelector("#ul");
+const nav = document.querySelector("#nav");
 
-const hamburger = document.querySelector(".hamburger-menu")
-const closedHamburger = document.querySelector(".hamburger-menu-closed")
-const ul = document.querySelector("#ul")
-const nav = document.querySelector("#nav")
-
-console.log(hamburger)
-console.log(nav)
-console.log(closedHamburger)
-hamburger.addEventListener("click", function(){
+console.log(hamburger);
+console.log(nav);
+console.log(closedHamburger);
+hamburger.addEventListener("click", function () {
   ul.style.visibility = "visible";
   closedHamburger.style.display = "block";
   hamburger.style.display = "none";
@@ -17,9 +16,9 @@ hamburger.addEventListener("click", function(){
   nav.style.height = "auto";
   nav.style.width = "100%";
   nav.style.zIndex = "10";
-})
+});
 
-closedHamburger.addEventListener("click", function(){
+closedHamburger.addEventListener("click", function () {
   ul.style.visibility = "hidden";
   closedHamburger.style.display = "none";
   hamburger.style.display = "block";
@@ -27,11 +26,4 @@ closedHamburger.addEventListener("click", function(){
   nav.style.backdropFilter = "none";
   hamburger.style.position = "relative";
   hamburger.style.left = "60%";
-})
- 
-
-
-
-    
-
-   
+});

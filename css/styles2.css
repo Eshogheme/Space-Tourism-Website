@@ -1,9 +1,10 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-@media (min-width:320px) and (max-width:425px){
-html,body{
+@media (min-width: 320px) and (max-width: 425px) {
+  html,
+  body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -11,22 +12,20 @@ html,body{
     height: 100%;
     background-image: url(/starter-code/assets/destination/background-destination-mobile.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     position: relative;
-}
+  }
 
+  #svg1 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
 
-#svg1{
-   position: absolute;
-   left: 20px;
-   top: 20px;
-
-}
-
-#nav{
+  #nav {
     position: absolute;
     left: 30%;
-    
+
     /* background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
    
@@ -35,41 +34,38 @@ html,body{
     width: 100%;
     z-index: 10;
      */
-}
+  }
 
-.hamburger-menu{
+  .hamburger-menu {
     position: relative;
     left: 110%;
     top: 25px;
     display: block;
-}
-.hamburger-menu-closed{
+  }
+  .hamburger-menu-closed {
     position: absolute;
     left: 60%;
     top: 20px;
-   display: none;
-}
+    display: none;
+  }
 
-
-
- #ul{
+  #ul {
     display: grid;
-    grid-template-rows: repeat(4,70px);
+    grid-template-rows: repeat(4, 70px);
     visibility: hidden;
     position: relative;
     top: 100px;
- }
+  }
 
- .li{
+  .li {
     list-style-type: none;
-    
- }
- .anchor{
+  }
+  .anchor {
     color: white;
     text-decoration: none;
     font-size: 16px;
- }
-.main{
+  }
+  .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,83 +74,74 @@ html,body{
     margin: 10px;
     position: relative;
     top: 50px;
-}
+  }
 
-.first-para{
+  .first-para {
     color: white;
     font-size: 18px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 2.7px;
     font-weight: lighter;
     margin-bottom: 50px;
-    margin-top:50px;
-}
-#first-text{
+    margin-top: 50px;
+  }
+  #first-text {
     opacity: 0.25;
-}
+  }
 
-.moon-image{
+  .moon-image {
     width: 55%;
-}
+  }
 
-.links-wrapper{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
-}
+  .links-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
 
-#new-ul{
+  #new-ul {
     display: flex;
-}
-.links-list{
+  }
+  .links-list {
     padding-right: 30px;
     list-style-type: none;
-    
-}
-.links{
+  }
+  .links {
     color: white;
     text-decoration: none;
     font-size: 19px;
-    font-family: 'Barlow Condensed', sans-serif;
-    
-}
-li:first-child a.links {
-    padding-bottom:10px ;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  li:first-child a.links {
+    padding-bottom: 10px;
     border-bottom: 3px solid white;
   }
-#heading{
+  #heading {
     color: white;
     font-size: 70px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: lighter;
-}
+  }
 
-
-.second-para{
+  .second-para {
     color: white;
     font-size: 16px;
     text-align: center;
     width: 100%;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: lighter;
-}
+  }
 
-.third-para{
-    color: #D0D6F9;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 18px
-}
+  .third-para {
+    color: #d0d6f9;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+  }
 
-.counter {
+  .counter {
     font-size: 40px;
     font-weight: 50;
     color: white;
-    font-family: 'Bellefair';
-
+    font-family: "Bellefair";
   }
-  
-
-  
-
-
 }

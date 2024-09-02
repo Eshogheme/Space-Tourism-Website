@@ -1,9 +1,10 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-@media (min-width:320px) and (max-width:425px){
-html,body{
+@media (min-width: 320px) and (max-width: 425px) {
+  html,
+  body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -11,22 +12,20 @@ html,body{
     height: 100%;
     background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     position: relative;
-}
+  }
 
+  #svg1 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
 
-#svg1{
-   position: absolute;
-   left: 20px;
-   top: 20px;
-
-}
-
-#nav{
+  #nav {
     position: absolute;
     left: 30%;
-    
+
     /* background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
    
@@ -35,85 +34,80 @@ html,body{
     width: 100%;
     z-index: 10;
      */
-}
+  }
 
-.hamburger-menu{
+  .hamburger-menu {
     position: relative;
     left: 100%;
     top: 25px;
     display: block;
-}
-.hamburger-menu-closed{
+  }
+  .hamburger-menu-closed {
     position: absolute;
     left: 60%;
     top: 20px;
-   display: none;
-}
+    display: none;
+  }
 
-
-
- #ul{
+  #ul {
     display: grid;
-    grid-template-rows: repeat(4,70px);
+    grid-template-rows: repeat(4, 70px);
     visibility: hidden;
     position: relative;
     top: 100px;
- }
+  }
 
- .li{
+  .li {
     list-style-type: none;
-    
- }
- .anchor{
+  }
+  .anchor {
     color: white;
     text-decoration: none;
     font-size: 16px;
-   
- }
+  }
 
- #main{
+  #main {
     display: flex;
     flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     position: relative;
     top: 70px;
-    
- }
+  }
 
-.para1{
+  .para1 {
     color: white;
     font-size: 20px;
     text-align: center;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: lighter;
     letter-spacing: 2.7px;
     /* position: relative;
     left: -15px; */
-}
+  }
 
-#header1{
+  #header1 {
     color: white;
     text-align: center;
     font-size: 80px;
-    font-family: 'Bellefair';
+    font-family: "Bellefair";
     font-weight: lighter;
     /* position: relative;
     left: -15px; */
-}
+  }
 
-.para2{
+  .para2 {
     color: white;
     font-size: 14px;
     text-align: center;
     width: 80%;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: lighter;
     /* position: relative;
     left: 20px; */
-}
+  }
 
-.explore-wrapper{
+  .explore-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,12 +116,11 @@ html,body{
     position: relative;
     left: 15%;
     top: 20px;
-}
-#explore-text{
+  }
+  #explore-text {
     font-size: 25px;
     position: relative;
     right: 160px;
-    font-family: 'Barlow Condensed', sans-serif;
-}
-
+    font-family: "Barlow Condensed", sans-serif;
+  }
 }
