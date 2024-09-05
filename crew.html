@@ -1,85 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <title>Space Tourism Website</title>
-    <link rel="stylesheet" href="css/crew.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-  </head>
 
-  <body>
-    <header>
-      <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-        <g fill="none" fill-rule="evenodd">
-          <circle cx="24" cy="24" r="24" fill="#FFF" />
-          <path
-            fill="#0B0D17"
-            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <title>Space Tourism Website</title>
+  <link rel="stylesheet" href="css/crew.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+
+<body>
+  <header>
+    <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+      <g fill="none" fill-rule="evenodd">
+        <circle cx="24" cy="24" r="24" fill="#FFF" />
+        <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+      </g>
+    </svg>
+    <nav id="nav">
+      <svg class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+        <g fill="#D0D6F9" fill-rule="evenodd">
+          <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
         </g>
       </svg>
-      <nav id="nav">
-        <svg
-          class="hamburger-menu"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="21"
-        >
-          <g fill="#D0D6F9" fill-rule="evenodd">
-            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
-          </g>
-        </svg>
-        <svg
-          class="hamburger-menu-closed"
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="21"
-        >
-          <g fill="#D0D6F9" fill-rule="evenodd">
-            <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
-            <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
-          </g>
-        </svg>
+      <svg class="hamburger-menu-closed" xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+        <g fill="#D0D6F9" fill-rule="evenodd">
+          <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+          <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+        </g>
+      </svg>
 
-        <ul id="ul">
-          <li class="li">
-            <a class="anchor" href="index.html">00 HOME</a>
-          </li>
-          <li class="li">
-            <a class="anchor" href="index2.html">01 DESTINATION</a>
-          </li>
-          <li class="li">
-            <a class="anchor" href="">02 CREW</a>
-          </li>
-          <li class="li">
-            <a class="anchor" href="technology.html">03 TECHNOLOGY</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <ul id="ul">
+        <li class="li">
+          <a class="anchor" href="index.html"><span class="invisible-numbers">00</span> HOME</a>
+        </li>
+        <li class="li">
+          <a class="anchor" href="index2.html"><span class="invisible-numbers">01</span> DESTINATION</a>
+        </li>
+        <li class="li">
+          <a class="anchor" href=""><span class="invisible-numbers">02</span> <span id="crew-link">CREW<span></a>
+        </li>
+        <li class="li">
+          <a class="anchor" href="technology.html"><span class="invisible-numbers">03</span> TECHNOLOGY</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="slider-container">
-      <div class="slider">
-        <div class="pages">
-          <div class="commander">
+  <section class="slider-container">
+    <div class="slider">
+      <div class="pages">
+        <div class="commander">
           <header>
             <h3 class="crew-header">
               <span class="crew-header-number">02</span> Meet your crew
             </h3>
           </header>
 
-          <img
-            class="crew-img"
-            src="starter-code/assets/crew/image-douglas-hurley.png"
-            alt=""
-          />
+          <img class="crew-img" src="starter-code/assets/crew/image-douglas-hurley.png" alt="" />
 
           <hr />
           <section id="bubbles-wrapper">
@@ -102,20 +81,16 @@
             </p>
           </main>
         </div>
-        </div>
-        <div class="pages">
-          <div class="specialist">
+      </div>
+      <div class="pages">
+        <div class="specialist">
           <header>
             <h3 class="crew-header">
               <span class="crew-header-number">02</span> Meet your crew
             </h3>
           </header>
 
-          <img
-            class="crew-img"
-            src="starter-code/assets/crew/image-mark-shuttleworth.png"
-            alt=""
-          />
+          <img class="crew-img" src="starter-code/assets/crew/image-mark-shuttleworth.png" alt="" />
 
           <hr />
           <section id="bubbles-wrapper">
@@ -139,20 +114,16 @@
             </p>
           </main>
         </div>
-        </div>
-        <div class="pages">
-          <div class="pilot">
+      </div>
+      <div class="pages">
+        <div class="pilot">
           <header>
             <h3 class="crew-header">
               <span class="crew-header-number">02</span> Meet your crew
             </h3>
           </header>
 
-          <img
-            class="crew-img"
-            src="starter-code/assets/crew/image-victor-glover.png"
-            alt=""
-          />
+          <img class="crew-img" src="starter-code/assets/crew/image-victor-glover.png" alt="" />
 
           <hr />
           <section id="bubbles-wrapper">
@@ -176,20 +147,16 @@
             </p>
           </main>
         </div>
-        </div>
-        <div class="pages">
-          <div class="engineer">
+      </div>
+      <div class="pages">
+        <div class="engineer">
           <header>
             <h3 class="crew-header">
               <span class="crew-header-number">02</span> Meet your crew
             </h3>
           </header>
 
-          <img
-            class="crew-img"
-            src="starter-code/assets/crew/image-anousheh-ansari.png"
-            alt=""
-          />
+          <img class="crew-img" src="starter-code/assets/crew/image-anousheh-ansari.png" alt="" />
 
           <hr />
           <section id="bubbles-wrapper">
@@ -213,10 +180,11 @@
             </p>
           </main>
         </div>
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="js/crew.js"></script>
-  </body>
+  <script src="js/crew.js"></script>
+</body>
+
 </html>
